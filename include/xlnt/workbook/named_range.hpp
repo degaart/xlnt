@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2015 Thomas Fussell
+// Copyright (c) 2014-2016 Thomas Fussell
 // Copyright (c) 2010-2015 openpyxl
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -49,14 +49,8 @@ class XLNT_CLASS named_range
     named_range(const named_range &other);
     named_range(const std::string &name, const std::vector<target> &targets);
 
-    std::string get_name() const
-    {
-        return name_;
-    }
-    const std::vector<target> &get_targets() const
-    {
-        return targets_;
-    }
+    std::string get_name() const;
+    const std::vector<target> &get_targets() const;
 
     named_range &operator=(const named_range &other);
 

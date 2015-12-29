@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2015 Thomas Fussell
+// Copyright (c) 2014-2016 Thomas Fussell
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -47,10 +47,7 @@ struct XLNT_CLASS time
     /// </summary>
     static time from_number(long double number);
 
-    explicit time(int hour_ = 0, int minute_ = 0, int second_ = 0, int microsecond_ = 0)
-        : hour(hour_), minute(minute_), second(second_), microsecond(microsecond_)
-    {
-    }
+    explicit time(int hour_ = 0, int minute_ = 0, int second_ = 0, int microsecond_ = 0);
     explicit time(const std::string &time_string);
 
     long double to_number() const;
